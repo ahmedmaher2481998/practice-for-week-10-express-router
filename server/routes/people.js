@@ -1,25 +1,25 @@
-const express = require('express');
-
+const express = require("express");
+// base url = /people/
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.json("Number 1");
+	res.json("Number 1");
 });
 
 router.post("/:personId/likes", (req, res) => {
-  res.json("Number 2");
+	res.json("Number 2");
 });
 
 router.delete("/:personId", (req, res) => {
-  res.json("Number 3");
+	res.json("Number 3");
 });
 
 router.get("/best-dressed/comments", (req, res) => {
-  res.json("Number 4");
+	res.json("Number 4");
 });
 
 router.get("/people/:name/lookup", (req, res) => {
-  res.json("Number 5");
+	res.json("Number 5");
 });
 
 module.exports = router;
